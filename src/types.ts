@@ -36,9 +36,9 @@ export interface LifecycleHooks<TProps = Props> {
   onCreate(instance: Instance<TProps>): void;
   onDestroy(instance: Instance<TProps>): void;
   onHidden(instance: Instance<TProps>): void;
-  onHide(instance: Instance<TProps>): void | false;
+  onHide(instance: Instance<TProps>): void | boolean;
   onMount(instance: Instance<TProps>): void;
-  onShow(instance: Instance<TProps>): void | false;
+  onShow(instance: Instance<TProps>): void | boolean;
   onShown(instance: Instance<TProps>): void;
   onTrigger(instance: Instance<TProps>, event: Event): void;
   onUntrigger(instance: Instance<TProps>, event: Event): void;
